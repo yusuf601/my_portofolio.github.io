@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Muh Yusuf cv</title>
   </head>
   <body>
@@ -65,11 +66,10 @@ dan startup. Mahir dalam Javascript dan React. Bergairah tentang UI/UX..
     
     <main>
     <!-- Services -->
-    <section id="services">
+    <section id="services" data-aos="fade-down" data-aos-delay="500">
       <div class="services main-container">
         <h3 class="pre-title">Services</h3>
         <h1 class="section-title services-title">Specialized In</h1>
-
         <div class="grid-3">
           <div class="service">
             <div class="service-icon">
@@ -139,12 +139,12 @@ dan startup. Mahir dalam Javascript dan React. Bergairah tentang UI/UX..
     <!-- Portfolios -->
     <section id="portfolios">
       <div class="portfolios main-container">
-        <h3 class="pre-title">My Works</h3>
-        <h1 class="section-title">Featured Portfolios</h1>
+        <h3 class="pre-title" data-aos="fade-left" data-aos-duration="800" data-aos-delay="50">My Works</h3>
+        <h1 class="section-title" data-aos="fade left" data-aos-duration="800">Featured Portfolios</h1>
 
         <div class="grid-3">
           <!-- Portfolio 1 -->
-          <div class="portfolio">
+          <div class="portfolio" data-aos="fade-up" data-aos-delay="500">
             <div class="portfolio-cover">
               <img
                 src="./images/portfolios/portfolio-1.png"
@@ -178,7 +178,7 @@ dan startup. Mahir dalam Javascript dan React. Bergairah tentang UI/UX..
           </div>
 
           <!-- Portfolio 2 -->
-          <div class="portfolio">
+          <div class="portfolio" data-aos="fade-up" data-aos-delay="600">
             <div class="portfolio-cover">
               <img
                 src="./images/portfolios/portfolio-2.png"
@@ -214,7 +214,7 @@ dan startup. Mahir dalam Javascript dan React. Bergairah tentang UI/UX..
           </div>
 
           <!-- Portfolio 3 -->
-          <div class="portfolio">
+          <div class="portfolio" data-aos="fade-up" data-aos-delay="700">
             <div class="portfolio-cover">
               <img
                 src="./images/portfolios/portfolio-3.jpeg"
@@ -259,7 +259,7 @@ dan startup. Mahir dalam Javascript dan React. Bergairah tentang UI/UX..
     <!-- Skills & Education -->
     <article>
     <section id="skills">
-      <div class="skills main-container">
+      <div class="skills main-container" data-aos="fade-down" data-aos-delay="400">
         <h3 class="pre-title">Learning Path</h3>
         <h1 class="section-title">Skills & Education</h1>
 
@@ -421,7 +421,7 @@ dan startup. Mahir dalam Javascript dan React. Bergairah tentang UI/UX..
       </div>
     </section>
     <!-- End Contact -->
-    <aside>
+    <aside data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <div class="card">
         <div class="img">
           <img src="images/yusuf.jpg" alt="yusuf">
@@ -452,5 +452,9 @@ dan startup. Mahir dalam Javascript dan React. Bergairah tentang UI/UX..
     <!-- End Footer -->
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
